@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Seu Nome</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Seu Nome</h1>
+    <p>Doutoranda em Engenharia de Software | IA & Desenvolvimento de Sistemas</p>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="publication.html">Publicações</a>
+      <a href="projects.html">Projetos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Sobre mim</h2>
+      <p>Sou pesquisadora na área de Engenharia de Software com foco em como a Inteligência Artificial pode ser integrada ao desenvolvimento de sistemas. Trabalho com métodos formais, automação e apoio a decisões no ciclo de vida de software.</p>
+    </section>
+
+    <section>
+      <h2>Formação</h2>
+      <ul>
+        <li>Doutorado em Engenharia de Software – Universidade X (2022–presente)</li>
+        <li>Mestrado em Engenharia de Software – Universidade Y (2020–2022)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 – Seu Nome | <a href="mailto:seu@email.com">Contato</a></p>
+  </footer>
+</body>
+</html>
