@@ -1,0 +1,7 @@
+
+├── index.html           ← Página inicial com bio e navegação
+├── publication.html     ← Lista organizada de publicações
+├── projects.html        ← Ferramentas e projetos do mestrado/doutorado
+├── style.css            ← Estilo visual (baseado nos dois sites)
+├── /img/                ← Foto pessoal, ícones
+└── /tool/               ← Ferramenta interativa
