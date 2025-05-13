@@ -8,10 +8,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-oBwzLgk+RzvMxjDkO+qKMyRnb3nJYZxCLt7Sbn0sMlU7LhUZCgnN7Ft0uV9Arfv1TwvCnAvQ+jY2D2f1GfD2wA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <div class="container">
-    <body>
-  <div class="container">
+<body>  <div class="container">
+    <!-- Include the sidebar -->
     <div id="sidebar-container"></div>
 
     <main class="content">
@@ -23,10 +21,14 @@
   </div>
 
   <script>
-    fetch('sidebar.html')
+    // Load the sidebar
+    fetch('components/sidebar.html')
       .then(res => res.text())
       .then(data => {
         document.getElementById('sidebar-container').innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Error loading sidebar:', error);
       });
   </script>
 </body>

@@ -2,23 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Publications - Mariana Martins</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  <title>Service - Mariana Martins</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <!-- Sidebar carregada dinamicamente -->
+  <div class="container">    <!-- Include the sidebar -->
     <div id="sidebar-container"></div>
 
     <main class="content">
       <section>
-        <h2>Publications</h2>
-        <p>Here you can find a list of my academic contributions.</p>
+        <h2>Service</h2>
+        <p>Here you can find a list of my academic and professional service contributions.</p>
         <ul>
-          <li>Organization on Congresso Brasileiro de Informática em Saúde (CBIS) 2016.</li>
+          <li>Organizer of Congresso Brasileiro de Informática em Saúde (CBIS) 2016</li>
           <li>Reviewer of Paper on Escola Regional de Informática (ERI-GO)- Goiás 2023 - 1 paper.</li>
           <li>Reviewer of Paper on CBIS 2022 - 1 paper</li>
           <li>Reviewer of Paper on CBIS 2020 - 2 papers</li>
@@ -29,10 +27,14 @@
   </div>
 
   <script>
-    fetch('sidebar.html')
+    // Load the sidebar
+    fetch('components/sidebar.html')
       .then(res => res.text())
       .then(data => {
         document.getElementById('sidebar-container').innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Error loading sidebar:', error);
       });
   </script>
 </body>

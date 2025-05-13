@@ -8,9 +8,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <div class="container">
-    <!-- Sidebar carregada dinamicamente -->
+<body>  <div class="container">
+    <!-- Include the sidebar -->
     <div id="sidebar-container"></div>
 
     <main class="content">
@@ -18,7 +17,7 @@
         <h2>Publications</h2>
         <p>Here you can find a list of my peer-reviewed articles, conference papers, and other academic publications.</p>
         <ul>
-          <li>Martins, M. et al. (2024). *A Qualitaative Study on Requirements Engineering Practices in an Artifical Intelligence Unit of the Industrial Research an Innovation Company*. Ibero-American Conference on Software Engineering (CIbSE).</li>
+          <li>Martins, M. et al. (2024). <em>A Qualitative Study on Requirements Engineering Practices in an Artificial Intelligence Unit of the Industrial Research and Innovation Company</em>. Ibero-American Conference on Software Engineering (CIbSE).</li>
           <li>Martins, M. et al. (2024). *A Requirements Engineering Process for Machine Learning Innovation Projects*. Requirements Engineering Workshop (WER).</li>
           <li>Martins, M. et al. (2021). *Estado da Arte e da Prática sobre Catálogos de Padrões de Requisitos*. Ibero-American Conference on Software Engineering (CIbSE).</li>
           <li>Martins, M. and Bulcão-Neto (2019). *Métodos de mapeamento entre Arquétipos e Ontologias: uma Revisão Sistemática. Journal of Heatlh Informatics*</li>
@@ -29,10 +28,14 @@
   </div>
 
   <script>
-    fetch('sidebar.html')
+    // Load the sidebar
+    fetch('components/sidebar.html')
       .then(res => res.text())
       .then(data => {
         document.getElementById('sidebar-container').innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Error loading sidebar:', error);
       });
   </script>
 </body>

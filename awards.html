@@ -2,23 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Publications - Mariana Martins</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  <title>Awards - Mariana Martins</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <!-- Sidebar carregada dinamicamente -->
+  <div class="container">    <!-- Include the sidebar -->
     <div id="sidebar-container"></div>
 
     <main class="content">
       <section>
-        <h2>Publications</h2>
-        <p>Here you can find a list of awards.</p>
+        <h2>Awards</h2>
+        <p>Here you can find a list of my awards and recognition.</p>
         <ul>
-          <li>Best Paper - Estado da arte e da prática sobre catálogos de padrões de requisitos - CIBSE 2021  </li>
+          <li>Best Paper - "Estado da arte e da prática sobre catálogos de padrões de requisitos" - CIBSE 2021</li>
           <li>Best Paper - Padrões de Requisitos para Sistemas de Registro Eletrônico de Saúde - WER 2021 </li><!-- Adicione mais conforme necessário -->
         </ul>
       </section>
@@ -26,10 +24,14 @@
   </div>
 
   <script>
-    fetch('sidebar.html')
+    // Load the sidebar
+    fetch('components/sidebar.html')
       .then(res => res.text())
       .then(data => {
         document.getElementById('sidebar-container').innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Error loading sidebar:', error);
       });
   </script>
 </body>

@@ -2,23 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Publications - Mariana Martins</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  <title>Education - Mariana Martins</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <!-- Sidebar carregada dinamicamente -->
+  <div class="container">    <!-- Include the sidebar -->
     <div id="sidebar-container"></div>
 
     <main class="content">
       <section>
-        <h2>Publications</h2>
-        <p>Here you can find a list of my formation courses.</p>
+        <h2>Education</h2>
+        <p>Here you can find my academic background and qualifications.</p>
         <ul>
-          li><strong>Institution:</strong> Universidade Federal de Goiás<br><strong>Stage:</strong> 2022 - 2026<br><strong>Title:</strong> PhD in Computer Science</li>
+          <li><strong>Institution:</strong> Universidade Federal de Goiás<br><strong>Period:</strong> 2022 - 2026<br><strong>Degree:</strong> PhD in Computer Science</li>
       <li><strong>Institution:</strong> Universidade Federal de Goiás<br><strong>Stage:</strong> 2020 - 2022<br><strong>Title:</strong> MsC in Computer Science</li>
       <li><strong>Institution:</strong> Universidade Federal de Goiás<br><strong>Stage:</strong> 2015 - 2019<br><strong>Title:</strong> BsC in Computer Science</li>
       <li><strong>Institution:</strong> Instituto Federal do Tocantins<br><strong>Stage:</strong> 2012 - 2014<br><strong>Title:</strong> Technical in Agribusiness</li><!-- Adicione mais conforme necessário -->
@@ -28,10 +26,14 @@
   </div>
 
   <script>
-    fetch('sidebar.html')
+    // Load the sidebar
+    fetch('components/sidebar.html')
       .then(res => res.text())
       .then(data => {
         document.getElementById('sidebar-container').innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Error loading sidebar:', error);
       });
   </script>
 </body>
