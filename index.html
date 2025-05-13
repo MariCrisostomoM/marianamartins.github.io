@@ -10,29 +10,27 @@
 </head>
 <body>
   <div class="container">
-    <aside class="sidebar">
-      <img src="img/profile.jpg" alt="Photo of Mariana Martins" class="profile-img" />
-      <h1>Mariana Martins</h1>
-      <p>PhD Candidate in Software Engineering</p>
-      <div class="social-icons">
-        <a href="https://github.com/MariCrisostomoM" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/seulinkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:seuemail@exemplo.com"><i class="fas fa-envelope"></i></a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Index</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="awards.html">Awards</a></li>
-          <li><a href="experience.html">Experience</a></li>
-          <li><a href="education.html">Education</a></li>
-          <li><a href="service.html">Service</a></li>
-          <li><a href="projects.html">Tool</a></li>
-          <li><a href="contact.html">Contact Me</a></li>
-        </ul>
-      </nav>
-    </aside>
+    <body>
+  <div class="container">
+    <div id="sidebar-container"></div>
+
+    <main class="content">
+      <section>
+        <h2>About Me</h2>
+        <p>I am an undergraduate and graduate professor in the field of computing and software engineering.</p>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    fetch('sidebar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('sidebar-container').innerHTML = data;
+      });
+  </script>
+</body>
+
     <main class="content">
       <section id="about">
         <h2>About Me</h2>
