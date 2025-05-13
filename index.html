@@ -8,14 +8,39 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-oBwzLgk+RzvMxjDkO+qKMyRnb3nJYZxCLt7Sbn0sMlU7LhUZCgnN7Ft0uV9Arfv1TwvCnAvQ+jY2D2f1GfD2wA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
-<body>  <div class="container">
+<body>
+  <div class="container">
     <!-- Include the sidebar -->
     <div id="sidebar-container"></div>
 
     <main class="content">
-      <section>
-        <h2>About Me</h2>
-        <p>I am an undergraduate and graduate professor in the field of computing and software engineering.</p>
+      <section id="about" class="section-content">
+        <div class="section-header">
+          <h2>About Me</h2>
+          <div class="accent-line"></div>
+        </div>
+        <div class="about-content">
+          <p class="intro-text">
+            I am an undergraduate and graduate professor in the field of computing and software engineering, passionate about education and technological innovation.
+          </p>
+          <div class="highlights">
+            <div class="highlight-item">
+              <i class="fas fa-chalkboard-teacher"></i>
+              <h3>Teaching</h3>
+              <p>Dedicated to shaping the next generation of software engineers and computer scientists.</p>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-laptop-code"></i>
+              <h3>Research</h3>
+              <p>Focused on advancing software engineering methodologies and educational technologies.</p>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-users"></i>
+              <h3>Community</h3>
+              <p>Active participant in academic and professional technology communities.</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   </div>
@@ -31,38 +56,5 @@
         console.error('Error loading sidebar:', error);
       });
   </script>
-</body>
-
-    <main class="content">
-      <section id="about">
-        <h2>About Me</h2>
-        <p>I am an undergraduate and graduate professor in the field of computing and software engineering.</p>
-      </section>
-      <section id="publications">
-        <h2>Publications</h2>
-        <p>List of scientific articles, conferences, and published works.</p>
-      </section>
-      <section id="awards">
-        <h2>Awards</h2>
-        <p>Recognition and awards received throughout my academic career.</p>
-      </section>
-      <section id="experience">
-        <h2>Experience</h2>
-        <p>Relevant professional and research experience.</p>
-      </section>
-      <section id="education">
-        <h2>Education</h2>
-        <p>Academic background including undergraduate, master's, and doctorate degrees.</p>
-      </section>
-      <section id="service">
-        <h2>Service</h2>
-        <p>Activities as a reviewer, scientific committees, events, and other services to the academic community.</p>
-      </section>
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <p>You can contact me via email or through the social networks listed on the side.</p>
-      </section>
-    </main>
-  </div>
 </body>
 </html>
