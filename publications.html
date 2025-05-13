@@ -1,18 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Publications</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Publications - Mariana Martins</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="content">
-    <h2>Publications</h2>
-    <ul>
-      <li><strong>Título:</strong> Exemplo de Artigo 1<br><strong>Ano:</strong> 2023<br><strong>Conferência/Journal:</strong> SBES<br><strong>Autores:</strong> M. Martins, A. Silva</li>
-      <li><strong>Título:</strong> Exemplo de Artigo 2<br><strong>Ano:</strong> 2022<br><strong>Conferência/Journal:</strong> ICSE<br><strong>Autores:</strong> M. Martins, J. Souza</li>
-    </ul>
+  <div class="container">
+    <!-- Sidebar carregada dinamicamente -->
+    <div id="sidebar-container"></div>
+
+    <main class="content">
+      <section>
+        <h2>Publications</h2>
+        <p>Here you can find a list of my peer-reviewed articles, conference papers, and other academic publications.</p>
+        <ul>
+          <li>Martins, M. et al. (2024). *A Qualitaative Study on Requirements Engineering Practices in an Artifical Intelligence Unit of the Industrial Research an Innovation Company*. Ibero-American Conference on Software Engineering (CIbSE).</li>
+          <li>Martins, M. et al. (2024). *A Requirements Engineering Process for Machine Learning Innovation Projects*. Requirements Engineering Workshop (WER).</li>
+          <li>Martins, M. et al. (2021). *Estado da Arte e da Prática sobre Catálogos de Padrões de Requisitos*. Ibero-American Conference on Software Engineering (CIbSE).</li>
+          <li>Martins, M. and Bulcão-Neto (2019). *Métodos de mapeamento entre Arquétipos e Ontologias: uma Revisão Sistemática. Journal of Heatlh Informatics*</li>
+          <li>Martins, M. et al. (2021). *Padrões de Requisitos para Sistemas de Registro Eletrônico de Saúde. Requirements Engineering Workshop.*</li><!-- Adicione mais conforme necessário -->
+        </ul>
+      </section>
+    </main>
   </div>
+
+  <script>
+    fetch('sidebar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('sidebar-container').innerHTML = data;
+      });
+  </script>
 </body>
 </html>
