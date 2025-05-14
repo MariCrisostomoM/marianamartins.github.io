@@ -8,8 +8,8 @@
 :root {
   --primary-color: #FFD700;
   --bg-dark: #0A0A0A;
-  --bg-sidebar: #141414;
-  --text-primary: #FFFFFF;
+  --bg-sidebar: #FFD700;
+  --text-primary: #FFD700;
   --text-secondary: #AAAAAA;
   --transition: all 0.3s ease;
 }
